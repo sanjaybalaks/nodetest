@@ -1,12 +1,13 @@
-var cluster = require('cluster');
-var http = require('http');
-var numCPUs = require('os').cpus().length;
+
+var express = require("express");
+var app = express();
 
 
-  // Workers can share any TCP connection
-  // In this case its a HTTP server
-  http.createServer(function(req, res) {
-    res.writeHead(200);
-    res.end("hello world\n");
-    console.log('node cluster activated');
-  }).listen(8000);
+app.get('/', function(req, res) {
+  res.send('Hello World!');
+});
+
+var port = Number(process.env.PORT || 5000);
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
