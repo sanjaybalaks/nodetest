@@ -1,0 +1,23 @@
+{
+  "name": "nodetest",
+  "version": "0.0.0",
+  "description": "This example app is gonna be a cool one",
+  "main": "cluster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sanjaybalaks/nodetest.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "sanjay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjaybalaks/nodetest/issues"
+  },
+  "homepage": "https://github.com/sanjaybalaks/nodetest"
+}
